@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Security-Policy" content="frame-ancestors *;"></meta>
+<head>
+	
+<title>Custom Embeddable Components</title>
+
+	<style>
+		body{
+			max-width:1440px;
+			margin: 0 auto;
+		}
+		.profile-card, .calendar{
+			padding: 20px 0px;
+			
+			
+		}
+		.profile-card{
+			gap: 22px;
+		    display: flex;
+		}
+	</style>
+</head>
+<body>
+	<h2> Web Embeddables -- Custom Components Demo</h2>
+	<div class="profile-card">
+		<sn-embedx-profile-card  id="cmp1"></sn-embedx-profile-card>
+		<sn-embedx-profile-card  id="cmp2"></sn-embedx-profile-card>
+		<sn-embedx-profile-card  id="cmp3"></sn-embedx-profile-card>
+	</div>
+	<div  class="calendar">
+		<sn-embedx-task-calendar title="Rohit Test" string1="Testing of component"></sn-embedx-task-calendar>
+	</div>
+	
+
+  <script type="module" src="./sdk.js"></script>
+	 <script type="module" src="./popup.js"></script>
+</body>
+</html>
