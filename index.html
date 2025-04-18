@@ -19,7 +19,7 @@
 			max-width:1440px;
 			margin: 0 auto;
 		}
-		.profile-card, .calendar{
+		.profile-card, .calendar, .case-list{
 			padding: 20px 0px;
 			
 			
@@ -36,6 +36,14 @@
 		<sn-embedx-profile-card  id="cmp1"></sn-embedx-profile-card>
 		<sn-embedx-profile-card  id="cmp2"></sn-embedx-profile-card>
 		<sn-embedx-profile-card  id="cmp3"></sn-embedx-profile-card>
+	</div>
+	<div class="case-list">
+		<sn-embedx-case-list
+			table="sn_customerservice_case"
+			limit="20"
+			title="List of Cases"
+			columns="number,short_description,sys_updated_on,state">
+		</sn-embedx-case-list>
 	</div>
 	<div  class="calendar">
 		<sn-embedx-task-calendar title="Rohit Test" string1="Testing of component"></sn-embedx-task-calendar>
