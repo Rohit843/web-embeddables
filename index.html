@@ -1,13 +1,40 @@
+
+
+
 <!DOCTYPE html>
 <html>
+	<meta http-equiv="Content-Security-Policy" content="frame-ancestors *;"></meta>
 <head>
-<title>Page Title</title>
+	
+<title>Custom Embeddable Components</title>
+
+	<style>
+		body{
+			max-width:1440px;
+			margin: 0 auto;
+		}
+		.profile-card, .calendar{
+			padding: 20px 0px;
+			
+			
+		}
+		.profile-card{
+			gap: 22px;
+		    display: flex;
+		}
+	</style>
 </head>
 <body>
+	<div class="profile-card">
+		<sn-embedx-profile-card  id="cmp1"></sn-embedx-profile-card>
+		<sn-embedx-profile-card  id="cmp2"></sn-embedx-profile-card>
+		<sn-embedx-profile-card  id="cmp3"></sn-embedx-profile-card>
+	</div>
+	<div  class="calendar">
+		<sn-embedx-task-calendar title="Rohit Test" string1="Testing of component"></sn-embedx-task-calendar>
+	</div>
+	
 
-<h1>Web Embeddables Outside Service Now </h1>
- <p><a href="./create-case.html" target="_blank">Create Case</a></p>
-<p><a href="./list-cases.html" target="_blank">List Cases</a></p>
- <p><a href="./task-calendar.html" target="_blank">List Custom Elements</a></p>
+  <script type="module" src="./sdk.js"></script>
 </body>
 </html>
