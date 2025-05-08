@@ -36,7 +36,7 @@ function getTokenCallBack() {
 }
 await login();
  const elRef1 =  document.getElementById("cmp1");
-	  setProperties(elRef1, {"string2": "Rohit Kumar Dogra","json1"="[{"label":"Software Developer","clickable":false,"id":"Software Developer"}]","json2"="[{"label":"Mobile Phone","value":"+91-8968422868","clickable":true,"id":"mobile-link"},{"label":"Email","value":"rohit.kumardogra@servicenow.com","clickable":true,"id":"email-link"},{"label":"City","value":"Bangalore"},{"label":"State","value":"Karnatka"}]"});
+	  setProperties(elRef1, {"string2": "Rohit Kumar Dogra","json1":"[{"label":"Software Developer","clickable":false,"id":"Software Developer"}]","json2":"[{"label":"Mobile Phone","value":"+91-8968422868","clickable":true,"id":"mobile-link"},{"label":"Email","value":"rohit.kumardogra@servicenow.com","clickable":true,"id":"email-link"},{"label":"City","value":"Bangalore"},{"label":"State","value":"Karnatka"}]"});
 	
 // await logout();
 
