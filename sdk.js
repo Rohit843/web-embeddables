@@ -28,7 +28,7 @@ await init({
 	theme: '31bf91ae07203010e03948f78ad30095',  
 	baseURL: 'https://empmkona1.service-now.com',
 	authCallback: getTokenCallBack,
-	cacheComponents: ["sn-embedx-case-form","sn-embedx-case-list","sn-embedx-task-calendar","sn-embedx-profile-card"] 
+	cacheComponents: ["sn-embedx-case-form","sn-embedx-case-list","sn-embedx-task-calendar","sn-embedx-profile-card","sn-embedx-card"] 
 });
 function getTokenCallBack() {
 	var idToken = access_token;
