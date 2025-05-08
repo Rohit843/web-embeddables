@@ -1,0 +1,45 @@
+
+
+
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Security-Policy" content="frame-ancestors *;"></meta>
+<head>
+	
+<title>Custom Embeddable Components</title>
+
+	<style>
+		.header{
+			font-size: 24px;
+			font-weight:600;
+			line-height:32px;
+			padding:20px;
+		}
+		body{
+			max-width:1440px;
+			margin: 0 auto;
+		}
+		.profile-card, .calendar, .case-list{
+			padding: 20px 20px;
+			
+			
+		}
+		.profile-card{
+			gap: 22px;
+		    display: flex;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">Web Embeddable - Non Service Now Instance (POC)</div>
+	<div class="profile-card">
+		<sn-embedx-card
+	string2="Rohit Kumar Dogra"
+	json1="[{"label":"Software Developer","clickable":false,"id":"Software Developer"}]
+	json2="[{"label":"Mobile Phone","value":"+91-8968422868","clickable":true,"id":"mobile-link"},{"label":"Email","value":"rohit.kumardogra@servicenow.com","clickable":true,"id":"email-link"},{"label":"City","value":"Bangalore"},{"label":"State","value":"Karnatka"}]>
+</sn-embedx-card>
+	</div>
+=
+  <script type="module" src="./sdk.js"></script>
+</body>
+</html>
