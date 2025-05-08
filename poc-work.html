@@ -34,8 +34,9 @@
 		}
 		#preloader{
 			display: flex;
-			flex-direction: column;
 			gap:10px;
+   
+    justify-content: center;
 		}
 	</style>
 </head>
@@ -43,7 +44,8 @@
 	<div class="header">Web Embeddable - Non Service Now Instance (POC)</div>
 	<div id="preloader">
 		<img class="loader-gif" src="./loader.gif">
-		<span>Please wait... Logging into service now system</span>
+		<div>Please wait... Logging into service now system</div>
+		
 	</div>
 	<div class="profile-card">
 		<sn-embedx-card id="cmp1"
