@@ -38,7 +38,10 @@ function getTokenCallBack() {
 login().then(()=>{
   const elRef1 =  document.getElementById("cmp1");
   setProperties(elRef1, {"string2": "Rohit Kumar Dogra","json1":[{"label":"Software Developer","clickable":false,"id":"Software Developer"}],"json2":[{"label":"Mobile Phone","value":"+91-8968422868","clickable":true,"id":"mobile-link"},{"label":"Email","value":"rohit.kumardogra@servicenow.com","clickable":true,"id":"email-link"},{"label":"City","value":"Bangalore"},{"label":"State","value":"Karnatka"}]});
-  const cards = document.getElementById("cards");
+   const elRef2 =  document.getElementById("cmp2");
+  setProperties(elRef2, {"string2": "Test User","json1":[{"label":"Software Developer 2","clickable":false,"id":"Software Developer"}],"json2":[{"label":"Mobile Phone","value":"+91-8968422862","clickable":true,"id":"mobile-link"},{"label":"Email","value":"test.kumardogra@servicenow.com","clickable":true,"id":"email-link"},{"label":"City","value":"Bangalore"},{"label":"State","value":"Karnatka"}]});
+
+	const cards = document.getElementById("cards");
 	cards.style.display = "flex";
 	 const preloader = document.getElementById("preloader");
 	preloader.style.display = "none";
