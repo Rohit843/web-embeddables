@@ -40,8 +40,8 @@ login().then(()=>{
   setProperties(elRef1, {"string2": "Rohit Kumar Dogra","json1":[{"label":"Software Developer","clickable":false,"id":"Software Developer"}],"json2":[{"label":"Mobile Phone","value":"+91-8968422868","clickable":true,"id":"mobile-link"},{"label":"Email","value":"rohit.kumardogra@servicenow.com","clickable":true,"id":"email-link"},{"label":"City","value":"Bangalore"},{"label":"State","value":"Karnatka"}]});
   const cards = document.getElementById("cards");
 	cards.style.display = "block";
-	 const cards = document.getElementById("preloader");
-	cards.style.display = "none";
+	 const preloader = document.getElementById("preloader");
+	preloader.style.display = "none";
 	
 });
 	
